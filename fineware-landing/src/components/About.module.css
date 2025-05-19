@@ -1,0 +1,41 @@
+/* // src/components/About.module.css */
+.about {
+  background: #00143f;
+  padding: 4rem 2rem;
+  color: #fff;
+  text-align: center;
+}
+.aboutContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.aboutDesc {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+}
+.aboutList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+.aboutItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.aboutIcon {
+  width: 2rem;
+  height: 2rem;
+}
+.aboutItemTitle {
+  font-weight: 600;
+}
+.aboutItemDesc {
+  color: #00ccff;
+}

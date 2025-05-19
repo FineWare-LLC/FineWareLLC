@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["vite/client", "react"],
+    // make sure TS only finds types under @types
+    "typeRoots": ["./node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+  },
+  // tell TS “only compile my src folder”
+  "include": ["src"],
+  // ignore everything else (node_modules, build folders, etc)
+  "exclude": ["node_modules", "dist"]
+}

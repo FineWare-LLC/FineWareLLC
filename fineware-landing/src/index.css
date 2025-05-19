@@ -1,0 +1,17 @@
+/* src/index.css */
+/* Global resets & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.5;
+}
+img {
+  display: block;
+  max-width: 100%;
+}

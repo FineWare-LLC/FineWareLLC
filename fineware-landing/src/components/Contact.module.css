@@ -1,0 +1,52 @@
+/* // src/components/Contact.module.css */
+.contact {
+  background: #000;
+  padding: 4rem 2rem;
+  color: #fff;
+  text-align: center;
+}
+.contactTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.contactSubtitle {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+}
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input,
+.select,
+.textarea {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.select {
+  appearance: none;
+  background-image: url('/images/icon-dropdown.svg');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+.textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.submitButton {
+  padding: 1rem;
+  background: #00ccff;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

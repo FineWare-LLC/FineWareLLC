@@ -1,0 +1,36 @@
+/* // src/components/Hero.module.css */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: #000;
+}
+.heroContent {
+  max-width: 50%;
+}
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+.heroSubtitle {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  color: #00ccff;
+}
+.heroButton {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #0066ff, #00ccff);
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.heroImage img {
+  max-width: 100%;
+}
