@@ -13,7 +13,7 @@ const Footer: React.FC = () => (
       {/* ... code omitted for brevity ... */}
     </div>
     <div className={styles.footerBottom}>
-      <h1 className={styles.logo}>&lt; FINEWARE /&gt;</h1>
+      <img className={styles.logo} src='logo.png'/>
       <p>Copyright © 2024-2025 FineWare™ LLC. All rights reserved.</p>
       <div className={styles.socialIcons}>
         {/* icons for Facebook, Instagram, LinkedIn, PayPal, X */}

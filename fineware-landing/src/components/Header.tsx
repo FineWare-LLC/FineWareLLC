@@ -8,7 +8,7 @@ import styles from './Header.module.css';
  */
 const Header: React.FC = () => (
   <header className={styles.header}>
-    <h1 className={styles.logo}>&lt; FINEWARE /&gt;</h1>
+    <img className={styles.logo} src='/logo.png'/>
   </header>
 );
 
