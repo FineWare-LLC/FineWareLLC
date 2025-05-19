@@ -4,9 +4,5 @@
   background: #000;
 }
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #00ccff, #0066ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  height: 6em;
 }
