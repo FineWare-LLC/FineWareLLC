@@ -14,7 +14,7 @@ const Hero: React.FC = () => (
       <button className={styles.heroButton}>Learn More</button>
     </div>
     <div className={styles.heroImage}>
-      <img src="/images/hero-graphic.png" alt="3D cube innovation illustration" />
+      <img src="/images/cube.gif" alt="3D cube innovation illustration" />
     </div>
   </section>
 );
