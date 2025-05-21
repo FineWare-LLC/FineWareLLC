@@ -48,3 +48,9 @@
   font-weight: 600;
   color: #00ccff;
 }
+
+@media (max-width: 768px) {
+  .servicesHeader {
+    text-align: center;
+  }
+}
