@@ -171,12 +171,6 @@ src/global.d.ts: Provides global type definitions, specifically for window.gtag 
 Contact Form (EmailJS)
 The contact form in Contact.tsx uses EmailJS to send email notifications without requiring a backend server. The following EmailJS credentials are used (these should ideally be environment variables, but are currently hardcoded):
 
-SERVICE_ID: service_h6caqeg
-
-TEMPLATE_ID: template_9kuurrq
-
-PUBLIC_KEY: 8KfrhMTx_iWm0N394
-
 Contributing
 Currently, this project is maintained by FineWare LLC. For contributions, please contact the FineWare LLC team.
 
