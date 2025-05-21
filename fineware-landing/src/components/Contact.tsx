@@ -1,8 +1,6 @@
 /**
  * Contact - renders the contact form section and handles form submission via EmailJS.
- *
- * Integrates with EmailJS to send emails without a backend. Replace `YOUR_TEMPLATE_ID`
- * with the actual template ID configured in your EmailJS dashboard.
+ * Integrates with EmailJS to send emails without a backend.
  *
  * @returns {JSX.Element} The rendered contact form section.
  */
@@ -15,20 +13,9 @@ const TEMPLATE_ID = 'template_9kuurrq';
 const PUBLIC_KEY = '8KfrhMTx_iWm0N394';
 
 const Contact: React.FC = () => {
-  // Reference to the form DOM node
   const formRef = useRef<HTMLFormElement>(null);
-
-  // Local state for submission feedback
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
 
-  /**
-   * handleSubmit - called when the form is submitted.
-   * Prevents default form submission and sends form data via EmailJS.
-   * Provides feedback on success or failure.
-   *
-   * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
-   * @returns {void}
-   */
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
 
@@ -42,12 +29,14 @@ const Contact: React.FC = () => {
       .then(
         (result) => {
           console.log('EmailJS Success:', result.text);
-          setStatusMessage('Thank you! Your message has been sent.');
+          setStatusMessage('Message sent successfully!');
           formRef.current?.reset();
+          setTimeout(() => setStatusMessage(null), 4000);
         },
         (error) => {
           console.error('EmailJS Error:', error.text);
-          setStatusMessage('Oops! Something went wrong. Please try again later.');
+          setStatusMessage('Something went wrong. Please try again.');
+          setTimeout(() => setStatusMessage(null), 4000);
         }
       );
   };
@@ -96,7 +85,7 @@ const Contact: React.FC = () => {
       </form>
 
       {statusMessage && (
-        <p className={styles.statusMessage}>{statusMessage}</p>
+        <div className={styles.emailChip}>{statusMessage}</div>
       )}
     </section>
   );

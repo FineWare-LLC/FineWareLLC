@@ -50,3 +50,38 @@
   border-radius: 0.5rem;
   cursor: pointer;
 }
+
+.submitButton:hover {
+  background: linear-gradient(90deg, #0052cc, #00bfff);
+  box-shadow: 0 0 1.5em #00bfff99;
+}
+
+.emailChip {
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background: #00ccff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 1rem;
+  display: inline-block;
+  box-shadow: 0 0 1rem #00ccff88;
+  animation: fadeInOut 4s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
