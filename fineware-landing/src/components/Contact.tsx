@@ -11,7 +11,7 @@ import emailjs from 'emailjs-com';
 import styles from './Contact.module.css';
 
 const SERVICE_ID = 'service_h6caqeg';
-const TEMPLATE_ID = 'template_gefs0qa';
+const TEMPLATE_ID = 'template_9kuurrq';
 const PUBLIC_KEY = '8KfrhMTx_iWm0N394';
 
 const Contact: React.FC = () => {

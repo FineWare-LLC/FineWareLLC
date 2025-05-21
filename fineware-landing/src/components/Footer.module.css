@@ -47,3 +47,14 @@
 .logo {
   height: 6em;
 }
+
+/* Hide image on mobile devices */
+@media (max-width: 768px) {
+  .footer {
+    font-size: small;
+  }
+  .footerBottom {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -6,3 +6,11 @@
 .logo {
   height: 6em;
 }
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+}

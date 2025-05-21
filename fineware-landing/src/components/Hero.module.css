@@ -66,6 +66,10 @@
 
 /* Hide image on mobile devices */
 @media (max-width: 768px) {
+  .hero  {
+    text-align: center;
+    justify-content: center;
+  }
   .heroImage img {
     display: none;
   }

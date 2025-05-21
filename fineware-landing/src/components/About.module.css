@@ -42,3 +42,11 @@
 .aboutItemDesc {
   color: #00ccff;
 }
+
+/* Hide image on mobile devices */
+@media (max-width: 768px) {
+  .aboutList {
+    grid-template-columns: 1fr;
+  }
+
+}
