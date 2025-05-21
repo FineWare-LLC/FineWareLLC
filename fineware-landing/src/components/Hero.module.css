@@ -31,7 +31,42 @@
   color: #fff;
   cursor: pointer;
 }
+
+.heroButton:hover {
+  background: linear-gradient(90deg, #0052cc, #00bfff);
+  box-shadow: 0 0 1.5em #00bfff99;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.heroImage {
+  position: relative;
+  display: inline-block;
+  overflow: visible; /* Ensures the glow can spread */
+}
+
+.heroImage .glow {
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: radial-gradient(circle, #3178c6ff 0%, #00143f 60%, transparent 100%);
+  z-index: 0;
+  filter: blur(4em);
+  pointer-events: none;
+}
+
 .heroImage img {
+  position: relative;
   height: 25em;
   max-width: 100%;
+  z-index: 1;
+}
+
+/* Hide image on mobile devices */
+@media (max-width: 768px) {
+  .heroImage img {
+    display: none;
+  }
 }

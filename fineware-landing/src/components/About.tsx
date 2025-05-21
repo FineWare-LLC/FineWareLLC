@@ -25,7 +25,7 @@ const featuresRight: Feature[] = [
  * @returns {JSX.Element}
  */
 const About: React.FC = () => (
-  <section className={styles.about}>
+  <section className={styles.about} id='about'>
     <div className={styles.aboutContainer}>
       <div className={styles.aboutText}>
         <h2 className={styles.aboutTitle}>Why Choose FineWare?</h2>
